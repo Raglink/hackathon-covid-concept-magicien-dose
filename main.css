@@ -2,4 +2,16 @@ root {
   --green-color: #94c11f;
   --blue-color: #15427b;
   --white-color: #ffffff;
+  --grey-color: #333;
+}
+
+body {
+  background-color: var(--grey-color);
+  display: flex;
+  justify-content: center;
+}
+form {
+  background-color: var(--bleu-color);
+}
+input {
 }
