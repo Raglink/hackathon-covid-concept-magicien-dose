@@ -1,69 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Formulaire ARS</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <form action="/" method="get">
-        <p>ARS: Ile-de-France</p>
-        <p>Saisissez le formulaire pour la semaine 16</p>
-       <br>
-        <label for="pfi">1ére dose Pfizer:</label>
-        <input type="text" id="pfi" name="pfi" value="2000">
-        <label for="lname">1ére dose Moderna:</label>
-        <input type="text" id="lname" name="lname" value="1000"><br><br>
-        <p>Répartition des doses</p>
-        <br>
-        <p>Département Essonne</p>
-        <div style="display:flex;align-items: center;">
-        <label for="lname">Répartiton des doses pour le département Essonne</label>
-        <input type="text" id="lname" name="lname" value="30"> <p>% soit </p>
-        <input type="text" id="lname" name="lname" placeholder="100" value="900"> <p>doses </p>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Formulaire ARS</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <link rel='stylesheet' type='text/css' href='flat-remix.min.css'>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <form action="/" method="get">
+            <h1>ARS: Ile-de-France</h1>
 
-        </div>
-        <div style="display:flex;align-items: center;">
-            <label for="lname"> Pfiser dose 1</label>
-            <!-- <input type="text" id="lname" name="lname"> <p>% soit </p> -->
-            <input type="text" id="lname" name="lname" placeholder="0"> <p>doses </p>
-        </div>
-        <div style="display:flex;align-items: center;">
-            <label for="lname"> Moderna dose 1</label>
-            <!-- <input type="text" id="lname" name="lname"> <p>% soit </p> -->
-            <input type="text" id="lname" name="lname" placeholder="0"> <p>doses </p>
-            
-        </div>
-        <p> Actuellement vous avez réparti 0 doses </p>
-        <br><br>
-        <p>Département Seine-Saint-Denis</p>
-        <div style="display:flex;align-items: center;">
-        <label for="lname">Répartiton des doses pour le département Seine-Saint-Denis</label>
-        <input type="text" id="lname" name="lname" value="36"> <p>% soit </p>
-        <input type="text" id="lname" name="lname" placeholder="100" value="1080"> <p>doses </p>
+            <div class="paper">
+                <p>Saisissez le formulaire pour la semaine 16</p>
 
-        </div>
-        <div style="display:flex;align-items: center;">
-            <label for="lname"> Pfiser dose 1</label>
-            <!-- <input type="text" id="lname" name="lname"> <p>% soit </p> -->
-            <input type="text" id="lname" name="lname" placeholder="0"> <p>doses </p>
-        </div>
-        <div style="display:flex;align-items: center;">
-            <label for="lname"> Moderna dose 1</label>
-            <!-- <input type="text" id="lname" name="lname"> <p>% soit </p> -->
-            <input type="text" id="lname" name="lname" placeholder="0"> <p>doses </p>
-            
-        </div>
-        <p> Actuellement vous avez réparti 0 doses </p>
-        <br><br>
-  
+                <div>
+                    <label style="width: 150px" for="pfi">1ére dose Pfizer:</label>
+                    <input type="text" id="pfi" name="pfi" value="2000">
+                </div>
+                <div>
+                    <label style="width: 150px" for="lname">1ére dose Moderna:</label>
+                    <input type="text" id="lname" name="lname" value="1000"><br><br>
+                </div>
 
+                <hr>
 
-        <!-- <input type="submit" value="validation provisoire"> -->
-        <input type="submit" value="validation">
-      </form>
-</body>
+                <h3>Répartition des doses</h3>
+
+                <h4>Département Essonne</h4>
+
+                <div style="display:flex;align-items: center;">
+                    <label for="lname">Répartiton des doses pour le département Essonne</label>
+                    <input type="text" id="lname" name="lname" value="30"> <p>% soit </p>
+                    <input type="text" id="lname" name="lname" placeholder="100" value="900"> <p>doses </p>
+                </div>
+
+                <div style="display:flex;align-items: center;">
+                    <label style="width: 150px" for="lname"> Pfiser dose 1</label>
+                    <!-- <input type="text" id="lname" name="lname"> <p>% soit </p> -->
+                    <input type="text" id="lname" name="lname" placeholder="0"> <p>doses </p>
+                </div>
+                <div style="display:flex;align-items: center;">
+                    <label style="width: 150px" for="lname"> Moderna dose 1</label>
+                    <!-- <input type="text" id="lname" name="lname"> <p>% soit </p> -->
+                    <input type="text" id="lname" name="lname" placeholder="0"> <p>doses </p>
+                </div>
+                <p>Actuellement vous avez réparti 0 doses.</p>
+
+                <hr>
+
+                <h4>Département Seine-Saint-Denis</h4>
+                <div style="display:flex;align-items: center;">
+                <label for="lname">Répartiton des doses pour le département Seine-Saint-Denis</label>
+                <input type="text" id="lname" name="lname" value="36"> <p>% soit </p>
+                <input type="text" id="lname" name="lname" placeholder="100" value="1080"> <p>doses </p>
+                </div>
+
+                <div style="display:flex;align-items: center;">
+                    <label style="width: 150px" for="lname"> Pfiser dose 1</label>
+                    <!-- <input type="text" id="lname" name="lname"> <p>% soit </p> -->
+                    <input type="text" id="lname" name="lname" placeholder="0"> <p>doses </p>
+                </div>
+                <div style="display:flex;align-items: center;">
+                    <label style="width: 150px" for="lname"> Moderna dose 1</label>
+                    <!-- <input type="text" id="lname" name="lname"> <p>% soit </p> -->
+                    <input type="text" id="lname" name="lname" placeholder="0"> <p>doses </p>
+                </div>
+
+                <p>Actuellement vous avez réparti 0 doses.</p>
+
+                <!-- <input type="submit" value="validation provisoire"> -->
+                <input type="submit" value="validation" class="green-button">
+            </div>
+        </form>
+    </body>
 </html>

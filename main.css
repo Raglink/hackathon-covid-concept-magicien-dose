@@ -13,5 +13,10 @@ body {
 form {
   background-color: var(--bleu-color);
 }
-input {
+
+input[type=submit] {
+  margin-left: auto;
+}
+input[type=text] {
+  margin: 0 4px !important;
 }
