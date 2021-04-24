@@ -1,4 +1,4 @@
-root {
+html {
   --green-color: #94c11f;
   --blue-color: #15427b;
   --white-color: #ffffff;
@@ -6,12 +6,18 @@ root {
 }
 
 body {
-  background-color: var(--grey-color);
   display: flex;
   justify-content: center;
 }
 form {
   background-color: var(--bleu-color);
+}
+
+h1 {
+  color: var(--green-color);
+}
+h2, h3, h4 {
+  color: var(--blue-color);
 }
 
 input[type=submit] {
