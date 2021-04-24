@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulaire ARS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form action="/" method="get">
+        <p>ARS: Ile-de-France</p>
+        <p>Ajouter un menu déroulant pour ajouter le numero de la semaine</p>
+       <br>
+        <label for="pfi">1ére dose Pfizer:</label>
+        <input type="text" id="pfi" name="pfi">
+        <label for="lname">1ére dose Moderna:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <p>Répartition des doses</p>
+        <br>
+        <p>Département 1</p>
+        <div style="display:flex;align-items: center;">
+        <label for="lname">Répartiton Département 1</label>
+        <input type="text" id="lname" name="lname"> <p>% soit </p>
+        <input type="text" id="lname" name="lname" placeholder="100"> <p>doses </p>
+
+        </div>
+        <div style="display:flex;align-items: center;">
+            <label for="lname"> Pfiser1</label>
+            <!-- <input type="text" id="lname" name="lname"> <p>% soit </p> -->
+            <input type="text" id="lname" name="lname" placeholder="100"> <p>doses </p>
+        </div>
+        <div style="display:flex;align-items: center;">
+            <label for="lname"> Moderna 1</label>
+            <!-- <input type="text" id="lname" name="lname"> <p>% soit </p> -->
+            <input type="text" id="lname" name="lname" placeholder="100"> <p>doses </p>
+            
+        </div>
+        <p>nombre de dose réparties 100 bloquer la validation si au dessus </p>
+        <br><br>
+  
+
+
+        <!-- <input type="submit" value="validation provisoire"> -->
+        <input type="submit" value="validation">
+      </form>
+</body>
+</html>
